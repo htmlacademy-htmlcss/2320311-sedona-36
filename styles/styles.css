@@ -16,7 +16,6 @@
   src: url("../fonts/ptsans-400.woff2") format("woff2");
 }
 
-*,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -76,6 +75,8 @@ img {
   padding: 0;
 
   list-style: none;
+  font-size: 18px;
+  line-height: 23px;
 }
 
 .button {
@@ -157,6 +158,11 @@ img {
   text-transform: uppercase;
 }
 
+.advantages-text {
+  font-size: 18px;
+  line-height: 21px;
+}
+
 .advantages-image {
   width: 800px;
   height: 385px;
@@ -194,6 +200,12 @@ img {
 .filter-page-title {
   font-size: 60px;
   line-height: 78px;
+}
+
+.filter-title {
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
 }
 
 .breadcrumbs-link {
