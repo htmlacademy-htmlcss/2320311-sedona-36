@@ -16,6 +16,7 @@
   src: url("../fonts/ptsans-400.woff2") format("woff2");
 }
 
+*,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -75,8 +76,52 @@ img {
   padding: 0;
 
   list-style: none;
-  font-size: 18px;
-  line-height: 23px;
+}
+
+.pagination-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: #82b3d3;
+  border-radius: 4px;
+}
+
+.pagination-link-current {
+  color: #000000;
+
+  background-color: #f2f2f2;
+}
+
+.pagination-link-more {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+
+  background-color: transparent;
+}
+
+.page-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.page-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
 }
 
 .button {
@@ -104,10 +149,6 @@ img {
 
 .button-transparent {
   background-color: transparent;
-}
-
-.page-header {
-  color: #000000;
 }
 
 .navigation-link {
@@ -155,12 +196,12 @@ img {
 .advantages-title {
   font-size: 24px;
   line-height: 28px;
+  color: #000000;
   text-transform: uppercase;
 }
 
 .advantages-text {
-  font-size: 18px;
-  line-height: 21px;
+  color: #ffffff;
 }
 
 .advantages-image {
@@ -175,7 +216,29 @@ img {
 }
 
 .advantages-item-full {
+  color: #ffffff;
+
   background-color: #82b3d3;
+}
+
+.advantages-item {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-item:nth-child(2n) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-full {
+  background-color: #82b3d3;
+}
+
+.advantages-list-recommendations .advantages-item {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-list-recommendations .advantages-item:nth-child(2n) {
+  background-color: #ffffff;
 }
 
 .search {
@@ -194,7 +257,10 @@ img {
 .filter {
   color: #ffffff;
 
+  background-color: #ffffff;
   background-image: url("../img/index-background-fon-catalog.png");
+  background-repeat: repeat;
+  background-size: cover;
 }
 
 .filter-page-title {
@@ -232,10 +298,24 @@ img {
 
 .sorting-view {
   display: flex;
-  padding: 20px;
+}
+
+.hotelts-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
 }
 
 .hotels-rating-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+
   background-color: #f2f2f2;
   border-radius: 4px;
 }
