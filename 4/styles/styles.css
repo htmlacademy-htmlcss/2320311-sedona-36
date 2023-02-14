@@ -78,25 +78,6 @@ img {
   list-style: none;
 }
 
-.pagination-link {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
-  text-align: center;
-  color: #ffffff;
-  text-transform: uppercase;
-  text-decoration: none;
-
-  background-color: #82b3d3;
-  border-radius: 4px;
-}
-
-.pagination-link-current {
-  color: #000000;
-
-  background-color: #f2f2f2;
-}
-
 .pagination-link-more {
   font-weight: 400;
   font-size: 22px;
@@ -106,8 +87,13 @@ img {
   background-color: transparent;
 }
 
+.pagination-link-current {
+  color: #000000;
+
+  background-color: #f2f2f2;
+}
+
 .page-title {
-  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
@@ -116,8 +102,6 @@ img {
 }
 
 .page-text {
-  font-style: normal;
-  font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -198,10 +182,6 @@ img {
   line-height: 28px;
   color: #000000;
   text-transform: uppercase;
-}
-
-.advantages-text {
-  color: #ffffff;
 }
 
 .advantages-image {
@@ -301,16 +281,12 @@ img {
 }
 
 .hotelts-title {
-  font-style: normal;
-  font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   color: #000000;
 }
 
 .hotels-rating-text {
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -322,6 +298,19 @@ img {
 
 .hotels-favorites-active {
   background-color: #7db54f;
+}
+
+.pagination-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: #82b3d3;
+  border-radius: 4px;
 }
 
 .footer-phone {
