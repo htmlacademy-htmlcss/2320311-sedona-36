@@ -143,9 +143,14 @@ img {
   flex-wrap: wrap;
   align-items: center;
   margin-left: auto;
+
+  list-style-type: none;
 }
 
 .navigation-link {
+  display: block;
+  padding: 24px 19px;
+
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -157,7 +162,15 @@ img {
   width: 160px;
 }
 
+.navigation-user-link-search .navigation-user-link-favorites {
+  min-width: 44;
+  min-height: 64;
+}
+
 .intro {
+  padding-top: 51px;
+  padding-bottom: 82px;
+
   text-align: center;
   color: #ffffff;
 
@@ -180,6 +193,9 @@ img {
 }
 
 .page-description {
+  padding-top: 64px;
+  padding-bottom: 64px;
+
   text-align: center;
 }
 
@@ -194,14 +210,20 @@ img {
   width: 400px;
   min-height: 385px;
   padding: 113px 85px 30px;
+  padding-top: 102px;
+  padding-bottom: 102px;
 }
 
 .advantages-container {
   display: flex;
   flex-wrap: wrap;
+
+  color: #ffffff;
 }
 
 .advantages-title {
+  padding-bottom: 62px;
+
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
@@ -242,10 +264,14 @@ img {
 }
 
 .page-description {
-  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .search {
+  padding-top: 96px;
+  padding-bottom: 96px;
+
   text-align: center;
 }
 
@@ -259,6 +285,9 @@ img {
 }
 
 .subscribe {
+  padding-top: 96px;
+  padding-bottom: 104px;
+
   text-align: center;
 }
 
@@ -267,6 +296,8 @@ img {
   flex-wrap: wrap;
   align-items: center;
   padding: 45px 70px 35px;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 
 .social {
@@ -291,6 +322,9 @@ img {
 }
 
 .filter {
+  padding-top: 35px;
+  padding-bottom: 70px;
+
   color: #ffffff;
 
   background-color: #ffffff;
@@ -322,9 +356,13 @@ img {
   flex-wrap: wrap;
   align-items: center;
   padding: 32px 70px 20px;
+  padding-top: 50px;
+  padding-bottom: 40px;
 }
 
 .sorting-title {
+  padding-right: 192px;
+
   font-size: 30px;
   line-height: 36px;
   color: #000000;
@@ -350,6 +388,8 @@ img {
 .hotels-list {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 40px;
+  padding-bottom: 80px;
 }
 
 .hotelts-title {
@@ -374,7 +414,10 @@ img {
 
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   padding: 37px 0;
+  padding-top: 80px;
+  padding-bottom: 60px;
 }
 
 .pagination-link {
