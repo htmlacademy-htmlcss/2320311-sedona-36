@@ -156,6 +156,17 @@ img {
   text-decoration: none;
 }
 
+.navigation-user-link {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+
+  color: #000000;
+}
+
 .navigation-button {
   width: 160px;
 }
@@ -185,13 +196,6 @@ img {
   height: 100%;
 }
 
-.page-description {
-  padding-top: 64px;
-  padding-bottom: 64px;
-
-  text-align: center;
-}
-
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
@@ -208,6 +212,10 @@ img {
 .advantages-container {
   display: flex;
   flex-wrap: wrap;
+}
+
+.advantages-item {
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .advantages-title {
@@ -231,10 +239,6 @@ img {
   display: block;
   width: 100%;
   height: 100%;
-}
-
-.advantages-item {
-  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .advantages-item-full {
@@ -277,11 +281,18 @@ img {
   line-height: 36px;
 }
 
-.subscribe {
+.subscribe-home {
   padding-top: 96px;
   padding-bottom: 104px;
-
+  background-image: url("../img/Subscribe.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
   text-align: center;
+}
+
+.subscribe-title {
+  color: #ffffff;
 }
 
 .footer {
@@ -375,9 +386,35 @@ img {
 }
 
 .hotels-list {
-  display: flex;
-  flex-wrap: wrap;
-  padding-bottom: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.hotels-item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px 20px;
+  padding: 20px;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+}
+
+.hotels-img {
+  display: block;
+  height: 212px;
+  grid-column: 1/-1;
+}
+
+.hotels-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.pagination-link {
+  text-decoration: none;
+  grid-column: 1/-1;
 }
 
 .hotelts-title {
@@ -404,23 +441,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   padding: 37px 0;
-}
-
-.pagination-link {
-  display: block;
-  min-width: 60px;
-  min-height: 60px;
-  padding: 10px;
-
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
-  text-align: center;
-  color: #ffffff;
-  text-decoration: none;
-
-  background-color: #82b3d3;
-  border-radius: 4px;
 }
 
 .pagination-link-more {
