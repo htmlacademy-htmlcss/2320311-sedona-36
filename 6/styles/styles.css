@@ -143,8 +143,6 @@ img {
   flex-wrap: wrap;
   align-items: center;
   margin-left: auto;
-
-  list-style-type: none;
 }
 
 .navigation-link {
@@ -160,11 +158,6 @@ img {
 
 .navigation-button {
   width: 160px;
-}
-
-.navigation-user-link-search .navigation-user-link-favorites {
-  min-width: 44;
-  min-height: 64;
 }
 
 .intro {
@@ -210,23 +203,28 @@ img {
   width: 400px;
   min-height: 385px;
   padding: 113px 85px 30px;
-  padding-top: 102px;
-  padding-bottom: 102px;
 }
 
 .advantages-container {
   display: flex;
   flex-wrap: wrap;
-
-  color: #ffffff;
 }
 
 .advantages-title {
-  padding-bottom: 62px;
+  position: relative;
+
+  margin: 0 0 31px;
+  padding-bottom: 31px;
 
   font-size: 24px;
   line-height: 28px;
+  text-align: center;
+  color: #000000;
   text-transform: uppercase;
+}
+
+.advantages-item-full .advantages-title {
+  color: #ffffff;
 }
 
 .advantages-image img {
@@ -249,12 +247,6 @@ img {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-item-full {
-  text-align: center;
-
-  background-color: #82b3d3;
-}
-
 .advantages-list-recommendations .advantages-item {
   background-color: rgba(131, 179, 211, 0.12);
 }
@@ -264,8 +256,9 @@ img {
 }
 
 .page-description {
-  margin-right: auto;
-  margin-left: auto;
+  padding: 69px 70px 68px;
+
+  text-align: center;
 }
 
 .search {
@@ -296,8 +289,6 @@ img {
   flex-wrap: wrap;
   align-items: center;
   padding: 45px 70px 35px;
-  padding-top: 40px;
-  padding-bottom: 30px;
 }
 
 .social {
@@ -322,14 +313,13 @@ img {
 }
 
 .filter {
-  padding-top: 35px;
-  padding-bottom: 70px;
+  padding: 35px 70px 68px;
 
   color: #ffffff;
 
-  background-color: #ffffff;
+  background-color: #94989b;
   background-image: url("../img/index-background-fon-catalog.png");
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -356,12 +346,10 @@ img {
   flex-wrap: wrap;
   align-items: center;
   padding: 32px 70px 20px;
-  padding-top: 50px;
-  padding-bottom: 40px;
 }
 
 .sorting-title {
-  padding-right: 192px;
+  margin: 0;
 
   font-size: 30px;
   line-height: 36px;
@@ -379,6 +367,7 @@ img {
 
 .sorting-view {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .hotels {
@@ -388,7 +377,6 @@ img {
 .hotels-list {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 40px;
   padding-bottom: 80px;
 }
 
@@ -416,8 +404,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   padding: 37px 0;
-  padding-top: 80px;
-  padding-bottom: 60px;
 }
 
 .pagination-link {
