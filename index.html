@@ -24,9 +24,9 @@
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
+        <ul class="navigation-user-list navigation-user">
+          <li class="navigation-user-item">
+            <a class="navigation-user-link navigation-user-link-search" href="#">
               <img src="img/search.svg" width="20" height="20" alt="Поиск.">
               <span class="visually-hidden">Поиск</span>
             </a>
@@ -41,7 +41,7 @@
         <a class="button navigation-button" href="#">Хочу сюда!</a>
       </nav>
     </header>
-    <main class="main">
+    <main class="main main-container">
       <section class="intro">
         <h1 class="visually-hidden">Добро пожаловать в Седона</h1>
         <div class="intro-img">
@@ -53,7 +53,7 @@
           <h2 class="page-title">Седона — небольшой городок в Аризоне, <br>заслуживающий большего!</h2>
           <p class="page-text">Рассмотрим причины, по которым Седона круче, чем Гранд&#8209;Каньон!</p>
         </div>
-        <ul class="advantages-list list-reset">
+        <div class="advantages-list list-reset">
           <li class="advantages-item advantages-item-full">
             <div class="advantages-container">
               <div class="advantages-content">
@@ -94,33 +94,31 @@
               </div>
             </div>
           </li>
-        </ul>
-
-        <div class="page-description">
-          <h2 class="page-title">Приезжайте в Седону отдохнуть <br>в комфорте и уюте!</h2>
-          <p class="page-text">Опытный персонал и качественное обслуживание!</p>
+          <div class="page-description">
+            <h2 class="page-title">Приезжайте в Седону отдохнуть <br>в комфорте и уюте!</h2>
+            <p class="page-text">Опытный персонал и качественное обслуживание!</p>
+          </div>
+          <ul class="advantages-list advantages-list-recommendations list-reset">
+            <li class="advantages-item">
+              <div class="advantages-content advantages-content-home">
+                <h3 class="advantages-title">Жильё</h3>
+                <p class="advantages-text">Рекомендуем пожить в настоящем мотеле,<br>всё как в кино!</p>
+              </div>
+            </li>
+            <li class="advantages-item">
+              <div class="advantages-content advantages-content-food">
+                <h3 class="advantages-title">Еда</h3>
+                <p class="advantages-text">Всегда заказывайте топовый&nbsp;фирменный бургер, вы не разочаруетесь!</p>
+              </div>
+            </li>
+            <li class="advantages-item">
+              <div class="advantages-content advantages-content-souvenirs">
+                <h3 class="advantages-title">Сувениры</h3>
+                <p class="advantages-text">Не только китайского,<br>но и настоящего местного производства!</p>
+              </div>
+            </li>
+          </ul>
         </div>
-
-        <ul class="advantages-list advantages-list-recommendations list-reset">
-          <li class="advantages-item">
-            <div class="advantages-content advantages-content-home">
-              <h3 class="advantages-title">Жильё</h3>
-              <p class="advantages-text">Рекомендуем пожить в настоящем мотеле,<br>всё как в кино!</p>
-            </div>
-          </li>
-          <li class="advantages-item">
-            <div class="advantages-content advantages-content-food">
-              <h3 class="advantages-title">Еда</h3>
-              <p class="advantages-text">Всегда заказывайте топовый&nbsp;фирменный бургер, вы не разочаруетесь!</p>
-            </div>
-          </li>
-          <li class="advantages-item">
-            <div class="advantages-content advantages-content-souvenirs">
-              <h3 class="advantages-title">Сувениры</h3>
-              <p class="advantages-text">Не только китайского,<br>но и настоящего местного производства!</p>
-            </div>
-          </li>
-        </ul>
       </section>
       <section class="search">
         <h2 class="search-title page-title">Заинтересовались?</h2>
