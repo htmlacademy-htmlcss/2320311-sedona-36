@@ -52,7 +52,6 @@
             </a>
           </li>
           <li class="breadcrumbs-item">
-            <img src="img/breadcrumbs-home.svg" alt="Иконка Дома" width="12" height="12">
             <a class="breadcrumbs-link breadcrumbs-link-current" href="#">Гостиницы</a>
           </li>
         </ul>
@@ -96,6 +95,27 @@
 
           <fieldset class="filter-group filter-group-range">
             <legend class="filter-title">Стоимость, ₽:</legend>
+
+            <div class="filter-range-container">
+              <div class="filter-range-change">
+                <div class="filter-range-item">
+                  <input class="form-input filter-range-input filter-range-input-min" id="min" name="min-price" type="number" value="0" min="0" max="9000">
+                  <label for="min">от</label>
+                </div>
+                <div class="filter-range-item">
+                  <input class="form-input filter-range-input filter-range-input-max" id="max" name="max-price" type="number" value="9000" min="0" max="9000">
+                  <label for="max">до</label>
+                </div>
+              </div>
+              <div class="filter-toggle">
+                <button class="filter-toggle-item filter-toggle-item-min" type="button">
+                  <span class="visually-hidden">Изменить минимальную цену</span>
+                </button>
+                <button class="filter-toggle-item filter-toggle-item-max" type="button">
+                  <span class="visually-hidden">Изменить максимальную цену</span>
+                </button>
+              </div>
+            </div>
           </fieldset>
           <div class="filter-button">
             <button class="button button-light filter-submit" type="submit">Применить</button>
@@ -212,17 +232,17 @@
       <ul class="footer-social social list-reset">
         <li class="social-item">
           <a class="social-link" href="https://vk.com/htmlacademy">
-            <img src="img/vk.svg" alt="Логотип Вконтакте" width="24" height="14">
+            <img src="img/vk.svg" alt="Логотип Вконтакте" width="47" height="41">
           </a>
         </li>
         <li class="social-item">
           <a class="social-link" href="https://t.me/htmlacademy">
-            <img src="img/telegram.svg" alt="Логотип Телеграм" width="24" height="14">
+            <img src="img/telegram.svg" alt="Логотип Телеграм" width="47" height="41">
           </a>
         </li>
         <li class="social-item">
           <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
-            <img src="img/youtube.svg" alt="Логотип Ютуба" width="24" height="14">
+            <img src="img/youtube.svg" alt="Логотип Ютуба" width="47" height="41">
           </a>
         </li>
       </ul>
