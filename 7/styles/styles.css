@@ -113,6 +113,13 @@ img {
   margin-left: auto;
 }
 
+.navigation-user-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: auto;
+}
+
 .navigation-item {
   margin: 0 16px;
 }
@@ -176,7 +183,8 @@ img {
   cursor: pointer;
 }
 
-.button:hover .button:focus {
+.button:hover,
+.button:focus {
   background-color: #615048;
 }
 
@@ -437,6 +445,10 @@ img {
   line-height: 36px;
 }
 
+.search-button {
+  margin: 0 auto;
+}
+
 .subscribe {
   padding: 96px 70px 104px;
 
@@ -565,7 +577,7 @@ img {
   text-decoration: none;
 }
 
-.breadcrumbs-item-home .breadcrumbs-link {
+.breadcrumbs-link-home .breadcrumbs-link {
   width: 13px;
   height: 21px;
 
@@ -648,6 +660,24 @@ img {
   border-radius: 4px;
 
   appearance: none;
+  gap: 16px;
+  grid-template-columns: 1fr;
+}
+
+.filter-control-input:hover {
+  opacity: 0.6;
+}
+
+.filter-control-input:focus {
+  border: 3px solid #83b3d3;
+}
+
+.filter-control-input:active {
+  opacity: 0.3;
+}
+
+.filter-control-input:disabled {
+  color: #ffffff;
 }
 
 .filter-control-input[type="checkbox"]:checked {
@@ -677,6 +707,21 @@ img {
 .filter-control-label {
   font-size: 18px;
   line-height: 23px;
+
+  gap: 16px;
+  grid-template-columns: 1fr;
+}
+
+.filter-control-label:hover {
+  opacity: 0.6;
+}
+
+.filter-control-label:focus {
+  color: #ffffff;
+}
+
+.filter-control-label:active {
+  opacity: 0.3;
 }
 
 .filter-range-change {
@@ -1002,12 +1047,6 @@ img {
   border-radius: 4px;
 }
 
-.pagination-link-current {
-  color: #000000;
-
-  background-color: #f2f2f2;
-}
-
 .pagination-link-more {
   padding: 16px 10px 10px;
 
@@ -1040,7 +1079,7 @@ img {
   color: #000000;
 }
 
-.page-footer {
+.footer {
   display: grid;
   align-items: center;
   padding: 40px 70px 30px;
