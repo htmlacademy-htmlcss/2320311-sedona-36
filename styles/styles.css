@@ -664,6 +664,22 @@ img {
   grid-template-columns: 1fr;
 }
 
+.filter-control-input:hover {
+  opacity: 0.6;
+}
+
+.filter-control-input:focus {
+  border: 3px solid #83b3d3;
+}
+
+.filter-control-input:active {
+  opacity: 0.3;
+}
+
+.filter-control-input:disabled {
+  color: #ffffff;
+}
+
 .filter-control-input[type="checkbox"]:checked {
   background-image: url("../img/check.svg");
   background-repeat: no-repeat;
@@ -694,6 +710,18 @@ img {
 
   gap: 16px;
   grid-template-columns: 1fr;
+}
+
+.filter-control-label:hover {
+  opacity: 0.6;
+}
+
+.filter-control-label:focus {
+  color: #ffffff;
+}
+
+.filter-control-label:active {
+  opacity: 0.3;
 }
 
 .filter-range-change {
