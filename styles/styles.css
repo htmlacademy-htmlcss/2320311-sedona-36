@@ -959,6 +959,26 @@ img {
   border-radius: 4px;
 }
 
+.sorting-item-active {
+  border: 2px solid #000000;
+}
+
+.sorting-item:active {
+  border: 2px solid #000000;
+}
+
+.sorting-item:hover {
+  border: 2px solid #000000;
+}
+
+.sorting-item:focus {
+  border: 2px solid #68a2ca;
+}
+
+.sorting-item:active {
+  border: 2px solid #000000;
+}
+
 .sorting-item-link:active {
   border: 2px solid #000000;
 }
@@ -1310,4 +1330,8 @@ img {
 
 .footer-logo:active {
   opacity: 0.3;
+}
+
+.footer-logo svg {
+  fill: currentColor;
 }
