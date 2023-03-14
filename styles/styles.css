@@ -199,10 +199,6 @@ img {
   color: #000000;
 }
 
-.navigation-user-link svg {
-  fill: currentColor;
-}
-
 .navigation-user-link:hover,
 .navigation-user-link:focus {
   outline: none;
@@ -345,9 +341,13 @@ img {
 }
 
 .page-description {
-  padding: 69px 70px 68px;
+  padding: 69px 70px 89px;
 
   text-align: center;
+}
+
+.page-description-recommendations {
+  padding: 63px 70px;
 }
 
 .page-title {
@@ -370,7 +370,6 @@ img {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-  color: #333333;
 }
 
 .advantages-list {
@@ -405,16 +404,16 @@ img {
   flex-direction: row-reverse;
 }
 
-.advantages-item-full:last-child .advantages-image {
-  order: -1;
-}
-
 .advantages-content {
   width: 400px;
   min-height: 385px;
   padding: 113px 85px 30px;
 
   text-align: center;
+}
+
+.advantages-item-full .advantages-content {
+  padding-top: 103px;
 }
 
 .advantages-title {
@@ -447,8 +446,6 @@ img {
 
 .advantages-text {
   margin: 0;
-
-  color: #333333;
 }
 
 .advantages-item-full .advantages-title {
@@ -518,8 +515,6 @@ img {
 
 .search-text {
   margin-bottom: 54px;
-
-  color: #333333;
 }
 
 .subscribe {
@@ -732,11 +727,11 @@ img {
   display: grid;
   justify-content: start;
 
-  gap: 18px;
+  gap: 16px;
   grid-template-columns: 1fr;
 }
 
-.filter-item {
+.filter-list-item {
   display: grid;
 
   gap: 17px;
@@ -936,7 +931,7 @@ img {
 .sorting {
   display: grid;
   align-items: center;
-  padding: 32px 70px 40px;
+  padding: 50px 70px 40px;
 
   gap: 20px 62px;
   grid-template-columns: 1fr auto auto;
@@ -1445,7 +1440,14 @@ img {
   height: 2px;
 
   background-color: #000000;
+}
+
+.modal-close-button::before {
   transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.modal-close-button::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 .modal-close-button:hover {
@@ -1468,6 +1470,8 @@ img {
 
 .modal-title {
   padding-right: 40px;
+
+  text-align: left;
 }
 
 .form {
@@ -1543,6 +1547,18 @@ img {
 
   margin-left: 11px;
   padding-top: 8px;
+}
+
+.tooltip-toggle {
+  width: 26px;
+  height: 26px;
+
+  background-color: #83b3d3;
+  background-image: url("../img/info.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  border-radius: 50%;
 }
 
 .tooltip-text {
